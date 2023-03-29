@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+    <title>Geolocation API</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Find your location using <br />
+        Geolocation API
+      </h1>
+      <p>
+        Get current position, watch for changes in the devie's position and
+        clear previous positions
+      </p>
+    </header>
+    <main>
+      <article>
+        <h2>With geolocation.getCurrentPosition()</h2>
+        <p>You can get the device's current location.</p>
+        <h2>With geolocation.watchPosition()</h2>
+        <p>
+          Registers a handler function that will be called automatically each
+          time the position of the device changes, returning the updated
+          location.
+        </p>
+      </article>
+      <section>
+        <button onclick="getLocation()">Try me, bitch</button>
+        <p id="demo"></p>
+      </section>
+    </main>
+  </body>
+</html>
