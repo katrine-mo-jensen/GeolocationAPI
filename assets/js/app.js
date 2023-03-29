@@ -1,9 +1,6 @@
-//Test to see if JS is connected to HTML: succes
-// console.log("hello, world");
-
 //Code from w3school: https://www.w3schools.com/html/html5_geolocation.asp
 
-/* const paragraph = document.getElementById("demo");
+const paragraph = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -39,4 +36,13 @@ function showError(error) {
       break;
   }
 }
- */
+
+const successCallback = (position) => {
+  console.log(position);
+};
+
+const errorCallback = (error) => {
+  console.error(error);
+};
+
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
